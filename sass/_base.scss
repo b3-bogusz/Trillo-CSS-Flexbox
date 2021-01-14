@@ -20,6 +20,10 @@
 $bp-largest: 75em; // 1200px/ 16px = 75em
 $bp-large: 68.75em; // 1100px / 16px = 68.75em
 $bp-medium: 60em;// 950px / 16px = 60em
+$bp-small: 43.75em;// 700px / 16px = 43.75em
+$bp-extra-small: 28em;// 450px / 16px = 28em
+$bp-smallest: 23.45em;// 375px / 16px = 23.45em
+$bp-iphone5s: 20em;// 320px / 16px = 20em
 
 * {
   margin: 0;
@@ -38,6 +42,9 @@ html {
 
   @media only screen and (max-width: $bp-large) {
     font-size: 50%; // 8/16px = 50%
+  }
+  @media only screen and (max-width: $bp-smallest  ) {
+    font-size: 37.5%; // 6/16px = 37.5%
   }
 }
 
